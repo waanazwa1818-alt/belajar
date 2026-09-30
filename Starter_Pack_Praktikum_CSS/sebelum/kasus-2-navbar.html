@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus 2: Merakit Navbar Web</title>
+    <style>
+        /* TUGAS:
+           1. Buat .navbar-container sejajar horizontal dengan Flexbox (pisahkan ujung ke ujung).
+           2. Buat .menu-list sejajar horizontal, hilangkan titik list, beri gap 20px.
+        */
+        
+        .navbar-container {
+            background-color: #f999b4;
+            color: white;
+            padding: 15px 30px;
+        
+         /* MAGIC FLEXBOX */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .menu-list {
+            list-style: none; /* Hilangkan titik */
+            display: flex;
+            gap: 20px; /* Jarak antar menu */
+        }
+        
+        .menu-list li {
+            cursor: pointer;
+            color: #010916;
+        }
+        
+        .menu-list li:hover {
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+<body style="margin: 0; font-family: Arial;">
+    <nav class="navbar-container">
+        <div class="logo">
+            <strong>🌸 NAZWA FLOWER</strong>
+        </div>
+        <ul class="menu-list">
+            <li>Beranda</li>
+            <li>Tentang</li>
+            <li>Layanan</li>
+            <li>Kontak</li>
+        </ul>
+    </nav>
+</body>
+</html>

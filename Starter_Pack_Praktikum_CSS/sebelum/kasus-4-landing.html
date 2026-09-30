@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!-- FONDASI RESPONSIF: META VIEWPORT TAG WAJIB -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus 4: Responsive Landing Page (Selesai)</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; background-color: #e796d4; color: white; }
+        
+        .hero-container {
+            display: flex;
+            flex-direction: row; /* Berdampingan kiri-kanan pada Desktop */
+            align-items: center;
+            padding: 50px 10%;
+            min-height: 80vh;
+            gap: 40px;
+        }
+        
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 3em; margin-bottom: 10px; color: #d068c2; line-height: 1.2;}
+        .hero-text p { color: #430827; line-height: 1.6; }
+        
+        .hero-image { flex: 1; text-align: center; }
+        .hero-image img { width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 10px 25px rgba(151, 50, 81, 0.902); }
+        
+        .btn { padding: 15px 30px; background: #010d13; border:none; border-radius: 8px; color: #b9476f; font-weight:bold; margin-top: 20px; cursor: pointer; }
+        
+        /* MEDIA QUERIES MAGIC (INJEKSI RESPONSIF MOBILE-BREAKPOINT) */
+        @media screen and (max-width: 768px) {
+            .hero-container {
+                flex-direction: column-reverse; /* Kolom direvers agar teks promosi di atas gambar */
+                align-items: center;
+                text-align: center;
+                padding: 30px 20px;
+            }
+            .hero-text h1 { font-size: 2.2em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>BUNGA MEWARNAI HARIMU!</h1>
+            <p>Beli bunga sekarang. untuk orang yang paling special dihidupmu bahagiakan lah dengan membeli bunga dari toko kami.</p>
+            <button class="btn">BUY</button>
+        </div>
+        <div class="hero-image">
+            <img src="ChatGPT Image 30 Sep 2026, 11.36.09.png" alt="Web Dev">
+        </div>
+    </div>
+</body>
+</html>
