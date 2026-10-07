@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>04 - Kartu Produk - Sebelum</title>
+</head>
+<body>
+     <style>
+        /* 1. Kartu Produk */
+        .product-card {
+            width: 280px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(244, 87, 137, 0.15);
+            margin: 30px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 3. Gambar responsif */
+        .product-card img {
+            max-width: 100%;
+            width: 100%;
+            display: block;
+        }
+
+        /* 4. Area teks */
+        .product-info {
+            padding: 20px;
+        }
+
+        /* 5. Harga */
+        .price {
+            color: #eb628d;
+            font-weight: bold;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+
+        /* 6. Tombol */
+        .product-card button {
+            width: 100%;
+            background-color: #570224;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 6px;
+        }
+
+        .product-card button:hover {
+            background-color: #cd75ae;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Bungkus konten ke dalam kartu dengan class ".product-card" berukuran lebar ~280px.
+    2. Beri styling pada kartu (border atau shadow, border-radius, overflow: hidden agar gambar tidak keluar batas melengkung).
+    3. Buat gambar (img) responsif dengan max-width: 100% dan hilangkan margin bawah bawaan gambar (display: block).
+    4. Beri padding pada area teks di bawah gambar.
+    5. Styling harga agar mencolok (warna merah/oranye, font-weight tebal, ukuran lebih besar).
+    6. Tombol "Beli Sekarang": width 100%, background warna, warna teks putih, hilangkan border, padding, cursor pointer.
+    -->
+    <div class="product-card">
+        <img src="FT PRODAK.png" alt="Flowers">
+        <div class="product-info">
+            <h3>FLOWERS CANTIK</h3>
+            <p>BELI BUNGA DIKEDAI KAMI BISA MENYESUIKAN SELERA ANDA.</p>
+            <span class="price">Rp Rp 50.000 - 500.000</span>
+            <button>Beli Sekarang</button>
+        </div>
+    </div>
+</body>
+</html>

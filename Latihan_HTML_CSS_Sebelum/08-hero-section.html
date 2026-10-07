@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>08 - Hero Section - Toko Bunga</title>
+
+    <style>
+        /* 1. Header memenuhi tinggi layar */
+        header {
+            height: 100vh;
+
+            /* 2 & 3. Background + Overlay */
+            background-image:
+                linear-gradient(
+                    rgba(74, 24, 48, 0.55),
+                    rgba(74, 24, 48, 0.25)
+                ),
+                url("https://images.unsplash.com/photo-1490750967868-88aa4486c946");
+
+            background-size: cover;
+            background-position: center;
+
+            /* 4. Flexbox */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* 5. Warna teks */
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Tombol */
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background-color: #ec4899;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        .btn:hover {
+            background-color: #db2777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero-content">
+            <h1>Indahnya Bunga, Indahnya Momen 🌸</h1>
+
+            <p>
+                Temukan berbagai pilihan buket bunga cantik untuk
+                hadiah, perayaan, dan momen spesial bersama orang tersayang.
+            </p>
+
+            <a href="#" class="btn">Lihat Koleksi Bunga</a>
+        </div>
+    </header>
+
+</body>
+</html>

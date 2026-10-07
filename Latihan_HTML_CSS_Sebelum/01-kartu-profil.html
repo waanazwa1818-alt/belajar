@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>01 - Kartu Profil - Sebelum</title>
+</head>
+<body>
+    
+
+    <style>
+        /* 1. CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 2. Body di tengah layar */
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eeeeee;
+        }
+
+        /* 3 & 4. Profile Card */
+        .profile-card {
+            width: 300px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 5. Gambar */
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* 6. Link menjadi tombol */
+        .profile-card a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #e65daa;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        /* 7. Efek hover */
+        .profile-card a:hover {
+            background-color: #f453a4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <img src="AWACANS.jpeg" alt="NAZWA">
+
+        <h2>NAZWA</h2>
+
+        <p>Web Developer</p>
+
+        <a href="#">Hubungi Sayaa</a>
+    </div>
+
+</body>
+</html>
+    <!-- 
+    INSTRUKSI PENGERJAAN (TO-DO LIST):
+    1. Tambahkan CSS reset dasar (margin: 0, padding: 0, box-sizing: border-box).
+    2. Atur body agar konten berada di tengah layar (gunakan Flexbox, min-height: 100vh, background warna abu-abu terang).
+    3. Bungkus elemen di bawah ke dalam class ".profile-card".
+    4. Beri ".profile-card" background putih, lebar sekitar 300px, padding, border-radius (misal 15px), text-align center, dan box-shadow halus.
+    5. Atur gambar (img) agar lebarnya misal 100px, height 100px, object-fit cover, dan border-radius 50% (lingkaran sempurna).
+    6. Hilangkan garis bawah pada link <a> (text-decoration: none), beri warna background, padding, border-radius, dan ubah display menjadi inline-block.
+    7. Beri efek hover pada link <a> agar warnanya sedikit berubah saat kursor diarahkan.
+    -->
+ 

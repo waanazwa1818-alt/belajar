@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>05 - Pricing Table - Sebelum</title>
+</head>
+<body>
+       <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>05 - Pricing Table - Toko Bunga</title>
+
+    <style>
+        /* 1. Pricing Container menggunakan Grid */
+        .pricing-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 50px auto;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 2. Styling setiap kartu */
+        .plan {
+            border: 1px solid #f3c4d8;
+            padding: 30px 20px;
+            border-radius: 12px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 3. Paket Popular lebih menonjol */
+        .plan.popular {
+            transform: scale(1.05);
+        }
+
+        /* 4. Warna khusus paket Popular */
+        .plan.popular {
+            border: 2px solid #ec4899;
+        }
+
+        .plan.popular h2 {
+            color: #ec4899;
+        }
+
+        /* 5. Menghilangkan bullet pada daftar fitur */
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .plan li {
+            margin-bottom: 12px;
+        }
+
+        /* Tombol */
+        .plan button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #ec4899;
+            color: white;
+            cursor: pointer;
+        }
+
+        .plan button:hover {
+            background-color: #db2777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pricing-container">
+
+        <div class="plan">
+            <h2>🌷 Buket Mini</h2>
+            <h3>Rp50.000</h3>
+
+            <ul>
+                <li>✓ 3–5 Bunga</li>
+                <li>✓ Kemasan Sederhana</li>
+                <li>✓ Cocok untuk Hadiah</li>
+            </ul>
+
+            <button>Pilih Buket</button>
+        </div>
+
+        <div class="plan popular">
+            <h2>🌸 Buket Sweet</h2>
+            <h3>Rp100.000</h3>
+
+            <ul>
+                <li>✓ 8–10 Bunga</li>
+                <li>✓ Kemasan Premium</li>
+                <li>✓ Pita Dekorasi</li>
+            </ul>
+
+            <button>Pilih Buket</button>
+        </div>
+
+        <div class="plan">
+            <h2>💐 Buket Premium</h2>
+            <h3>Rp200.000</h3>
+
+            <ul>
+                <li>✓ 15–20 Bunga</li>
+                <li>✓ Kemasan Eksklusif</li>
+                <li>✓ Dekorasi Premium</li>
+            </ul>
+
+            <button>Pilih Buket</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

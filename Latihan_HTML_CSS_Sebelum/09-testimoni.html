@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>09 - Testimoni - Toko Bunga</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff7fb;
+            margin: 0;
+            padding: 40px;
+            color: #4a1830;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '"';
+            position: absolute;
+            top: -25px;
+            left: 10px;
+            font-size: 150px;
+            color: #fbcfe8;
+            z-index: 0;
+        }
+
+        .card p {
+            position: relative;
+            z-index: 1;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .author {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .author h4 {
+            margin: 0;
+            color: #db2777;
+        }
+
+        .author span {
+            color: #9d5677;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Atur container ".testimonial-grid" menggunakan CSS Grid.
+    2. Berikan gaya pada kartu.
+    3. Buat posisi kartu menjadi "position: relative".
+    4. Gunakan pseudo-element "::before" untuk tanda kutip besar.
+    5. Rapikan elemen nama menggunakan flexbox.
+    -->
+
+    <div class="testimonial-grid">
+
+        <div class="card">
+            <p>"Buket bunganya sangat cantik dan segar. Cocok sekali untuk hadiah!"</p>
+            <div class="author">
+                <h4>Andi Wijaya 🌷</h4>
+                <span>Pelanggan Toko Bunga</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>"Pelayanannya ramah dan pesanannya sesuai dengan yang saya inginkan."</p>
+            <div class="author">
+                <h4>Siti Aminah 🌸</h4>
+                <span>Pelanggan Setia</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>"Buketnya indah, kemasannya rapi, dan sangat cocok untuk momen spesial."</p>
+            <div class="author">
+                <h4>Reza Pratama 💐</h4>
+                <span>Pelanggan Toko Bunga</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
