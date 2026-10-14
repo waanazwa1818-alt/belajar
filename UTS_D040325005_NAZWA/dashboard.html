@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Sistem Akuntansi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar Navigasi -->
+        <aside class="sidebar">
+            <h2 class="sidebar-title">SIA</h2>
+            <p class="sidebar-subtitle">PT Prima Akuntindo</p>
+
+            <nav aria-label="Navigasi utama">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="dashboard.html" class="active">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li><a href="#">Data Akun</a></li>
+                    <li><a href="#">Transaksi</a></li>
+                    <li><a href="#">Laporan Keuangan</a></li>
+                    <li><a href="login.html">Keluar</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="dashboard-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Ringkasan Keuangan Perusahaan</p>
+                </div>
+            </header>
+
+            <section class="summary-section">
+                <h2>Ringkasan Saldo</h2>
+
+                <div class="summary-cards">
+
+                    <article class="summary-card cash-card">
+                        <h3>SALDO KAS</h3>
+                        <p class="card-amount">Rp 25.000.000</p>
+                        <p class="card-description">
+                            Total kas perusahaan
+                        </p>
+                    </article>
+
+                    <article class="summary-card receivable-card">
+                        <h3>PIUTANG</h3>
+                        <p class="card-amount">Rp 10.000.000</p>
+                        <p class="card-description">
+                            Total piutang perusahaan
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

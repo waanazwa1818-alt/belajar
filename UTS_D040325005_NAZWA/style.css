@@ -1,0 +1,623 @@
+
+/* =====================================
+   SOAL 3: FORM INPUT JURNAL UMUM
+   ===================================== */
+
+.jurnal-page {
+    background-color: #f4f605;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Posisi form di tengah halaman */
+.jurnal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* Kotak form jurnal */
+.jurnal-card {
+    width: 100%;
+    max-width: 750px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Header form */
+.jurnal-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.jurnal-header h1 {
+    font-size: 25px;
+    color: #212529;
+    margin-bottom: 8px;
+}
+
+.jurnal-header p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Baris label dan input */
+.jurnal-form-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 22px;
+    border: none;
+}
+
+.jurnal-form-group > label,
+.jurnal-form-group > legend {
+    width: 150px;
+    min-width: 150px;
+    padding-top: 11px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.jurnal-form-group > input,
+.jurnal-form-group > select,
+.jurnal-form-group > textarea {
+    flex: 1;
+    min-width: 0;
+    padding: 11px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.jurnal-form-group > textarea {
+    resize: vertical;
+}
+
+/* Efek saat input dipilih */
+.jurnal-form-group > input:focus,
+.jurnal-form-group > select:focus,
+.jurnal-form-group > textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+}
+
+/* Pilihan debit dan kredit */
+.jurnal-form-group > legend {
+    float: left;
+}
+
+.radio-options {
+    display: flex;
+    flex: 1;
+    gap: 25px;
+    padding-top: 10px;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    color: #343a40;
+    cursor: pointer;
+}
+
+.radio-options input {
+    accent-color: #0d6efd;
+}
+
+/* Tombol form */
+.jurnal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+    padding-left: 165px;
+}
+
+.jurnal-actions button {
+    width: auto;
+    padding: 12px 20px;
+}
+
+.jurnal-submit {
+    background-color: #0d6efd;
+}
+
+.jurnal-submit:hover {
+    background-color: #0b5ed7;
+}
+
+.jurnal-reset {
+    background-color: #6c757d;
+}
+
+.jurnal-reset:hover {
+    background-color: #565e64;
+}
+
+/* Penyesuaian untuk layar kecil */
+@media (max-width: 600px) {
+    .jurnal-card {
+        padding: 22px 18px;
+    }
+
+    .jurnal-form-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .jurnal-form-group > label,
+    .jurnal-form-group > legend {
+        width: 100%;
+        min-width: 0;
+        padding-top: 0;
+    }
+
+    .jurnal-form-group > input,
+    .jurnal-form-group > select,
+    .jurnal-form-group > textarea {
+        width: 100%;
+        flex: auto;
+    }
+
+    .jurnal-form-group > legend {
+        float: none;
+    }
+
+    .radio-options {
+        padding-top: 0;
+    }
+
+    .jurnal-actions {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SOAL 4: LAPORAN LABA RUGI
+   ===================================== */
+
+.laba-rugi-page {
+    background-color: #f4f605;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.laporan-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+.laporan-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.laporan-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.laporan-header h1 {
+    font-size: 25px;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.laporan-header h2 {
+    font-size: 18px;
+    color: #343a40;
+    margin-bottom: 8px;
+}
+
+.laporan-header p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Tabel laporan */
+.laba-rugi-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #343a40;
+}
+
+.laba-rugi-table th,
+.laba-rugi-table td {
+    border: 1px solid #dee2e6;
+    padding: 13px 15px;
+}
+
+.laba-rugi-table thead th {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Zebra-striping */
+.laba-rugi-table tbody tr:nth-child(even) {
+    background-color: #f2f4f6;
+}
+
+.laba-rugi-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Baris kategori */
+.laba-rugi-table tbody tr.section-row {
+    background-color: #e2e6ea;
+    font-weight: bold;
+}
+
+/* Baris subtotal */
+.laba-rugi-table tbody tr.subtotal-row {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+/* Kolom nominal rata kanan */
+.laba-rugi-table td.nominal {
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Total laba bersih */
+.laba-rugi-table tbody tr.total-row {
+    background-color: #dbeafe;
+    font-weight: bold;
+    color: #212529;
+    border-top: 2px solid #343a40;
+}
+
+.laba-rugi-table tbody tr.total-row td {
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.laporan-footer {
+    margin-top: 25px;
+    text-align: right;
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+    .laporan-container {
+        padding: 15px 10px;
+    }
+
+    .laporan-card {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .laba-rugi-table {
+        min-width: 500px;
+    }
+
+    .laporan-header h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+   SOAL 2: DASHBOARD SISTEM AKUNTANSI
+   ===================================== */
+
+/* Halaman Dashboard */
+.dashboard-page {
+    background-color: #f4f605;
+    min-height: 100vh;
+}
+
+/* Layout dua kolom */
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    background-color: #212529;
+    color: #ffffff;
+    padding: 25px 20px;
+}
+
+/* Judul sidebar */
+.sidebar-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.sidebar-subtitle {
+    font-size: 13px;
+    color: #adb5bd;
+    margin-bottom: 35px;
+}
+
+/* Menu navigasi */
+.sidebar-menu {
+    list-style: none;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background-color: #0d6efd;
+}
+
+/* Konten utama */
+.dashboard-content {
+    flex: 1;
+    min-width: 0;
+    padding: 35px;
+}
+
+/* Header dashboard */
+.dashboard-header {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-header h1 {
+    color: #212529;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.dashboard-header p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Bagian ringkasan */
+.summary-section h2 {
+    font-size: 20px;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+/* Dua card sejajar horizontal */
+.summary-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card keuangan */
+.summary-card {
+    flex: 1;
+    min-width: 220px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid #0d6efd;
+}
+
+.cash-card {
+    border-left-color: #0d6efd;
+}
+
+.receivable-card {
+    border-left-color: #198754;
+}
+
+.summary-card h3 {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 18px;
+}
+
+.card-amount {
+    font-size: 25px;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 13px;
+    color: #6c757d;
+}
+
+/* Tampilan pada layar kecil */
+@media (max-width: 700px) {
+    .dashboard-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .sidebar-subtitle {
+        margin-bottom: 20px;
+    }
+
+    .dashboard-content {
+        padding: 20px;
+    }
+
+    .summary-cards {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pengaturan dasar halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f605;
+    min-height: 100vh;
+}
+
+/* Menengahkan kotak login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kotak login */
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Judul dan nama perusahaan */
+.login-card h1 {
+    font-size: 24px;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Label dan input */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Efek ketika input dipilih */
+.form-group input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* Tombol masuk */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover tombol */
+button:hover {
+    background-color: #0b5ed7;
+}
